@@ -10,6 +10,7 @@ import {
 export default function TelaEsqueciMinhaSenha({ navigation }) {
   return (
     <SafeAreaView style={styles.esqueciSenhaContainer}>
+
       <Text style={styles.esqueciSenhaTitle}>Esqueci minha senha</Text>
 
       <Text style={styles.esqueciSenhaText}>
@@ -23,7 +24,9 @@ export default function TelaEsqueciMinhaSenha({ navigation }) {
         onPress={() => navigation.navigate('TelaLogin')}>
         <Text>Enviar</Text>
       </TouchableOpacity>
+
     </SafeAreaView>
+
   );
 }
 

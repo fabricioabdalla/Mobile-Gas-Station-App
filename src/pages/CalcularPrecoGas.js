@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
 
+
+
 export default function CalcularPrecoGas() {
   const [Alcool, setAlcool] = useState("");
   const [Gasolina, setGasolina] = useState("");
@@ -30,7 +32,9 @@ export default function CalcularPrecoGas() {
   }
 
   return (
+
     <SafeAreaView style={styles.container}>
+
       <View style={styles.header}>
         <Text style={styles.textHeader}>Calculadora de Combustível</Text>
       </View>

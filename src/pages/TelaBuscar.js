@@ -5,6 +5,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 export default function BuscaTela() {
   return (
     <SafeAreaView style={styles.container}>
+
       <View style={styles.inputContainer}>
         <MaterialIcons name="gps-fixed" size={24} color="black" />
         <TextInput
