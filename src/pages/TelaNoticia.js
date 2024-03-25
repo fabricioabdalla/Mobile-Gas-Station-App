@@ -95,7 +95,6 @@ export default function TelaNoticia({ navigation }) {
 
 const styles = StyleSheet.create({
   paragraph: {
-    justifyContent: 'start',
     alignItems: 'center',
     width: 300,
     height: 150,
@@ -121,7 +120,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   newsTopTitle: {
-    justifyContent: 'start',
     fontSize: 20,
     fontWeight: 'bold',
   },

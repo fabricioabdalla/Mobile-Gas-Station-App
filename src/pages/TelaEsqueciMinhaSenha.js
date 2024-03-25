@@ -4,11 +4,13 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
+  SafeAreaView,
 } from 'react-native';
 
 export default function TelaEsqueciMinhaSenha({ navigation }) {
   return (
-    <View style={styles.esqueciSenhaContainer}>
+    <SafeAreaView style={styles.esqueciSenhaContainer}>
+
       <Text style={styles.esqueciSenhaTitle}>Esqueci minha senha</Text>
 
       <Text style={styles.esqueciSenhaText}>
@@ -22,7 +24,9 @@ export default function TelaEsqueciMinhaSenha({ navigation }) {
         onPress={() => navigation.navigate('TelaLogin')}>
         <Text>Enviar</Text>
       </TouchableOpacity>
-    </View>
+
+    </SafeAreaView>
+
   );
 }
 

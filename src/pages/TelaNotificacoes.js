@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function TelaNotificacoes() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.notification}>
         <MaterialIcons name="notifications" size={24} color="#FF0000" />
         <View style={styles.notificationDetails}>
@@ -19,7 +19,7 @@ export default function TelaNotificacoes() {
         source={require('./assets/shell.png')}
         style={styles.logo}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 

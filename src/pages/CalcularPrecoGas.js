@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, TextInput, TouchableOpacity, SafeAreaView } from 'react-native';
+
+
 
 export default function CalcularPrecoGas() {
   const [Alcool, setAlcool] = useState("");
@@ -30,7 +32,9 @@ export default function CalcularPrecoGas() {
   }
 
   return (
-    <View style={styles.container}>
+
+    <SafeAreaView style={styles.container}>
+
       <View style={styles.header}>
         <Text style={styles.textHeader}>Calculadora de Combustível</Text>
       </View>
@@ -62,7 +66,7 @@ export default function CalcularPrecoGas() {
       <TouchableOpacity style={styles.buttonClear} onPress={limpar}>
         <Text style={styles.textButtonClear}>Limpar</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 

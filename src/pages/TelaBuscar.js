@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Image } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Image, SafeAreaView } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function BuscaTela() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+
       <View style={styles.inputContainer}>
         <MaterialIcons name="gps-fixed" size={24} color="black" />
         <TextInput
@@ -17,7 +18,7 @@ export default function BuscaTela() {
         source={require('./assets/mapa.png')}
         style={styles.mapImage}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 

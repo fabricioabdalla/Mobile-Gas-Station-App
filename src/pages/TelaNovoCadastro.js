@@ -4,11 +4,12 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
+  SafeAreaView,
 } from 'react-native';
 
 export default function TelaCadastro({ navigation }) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Novo Cadastro</Text>
 
       <TextInput style={styles.input} placeholder="Nome" />
@@ -30,7 +31,7 @@ export default function TelaCadastro({ navigation }) {
         onPress={() => navigation.navigate('TelaLogin')}>
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 

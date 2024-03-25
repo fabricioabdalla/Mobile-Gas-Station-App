@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 export default function Noticias({ navigation }) {
   return (
-    <View>
+    <SafeAreaView>
       <Image style={styles.paragraph} source={require('./assets/shell.png')} />
 
       <View style={styles.container}>
@@ -37,13 +37,12 @@ export default function Noticias({ navigation }) {
           </Text>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   paragraph: {
-    justifyContent: 'start',
     alignItems: 'center',
     width: 300,
     height: 150,

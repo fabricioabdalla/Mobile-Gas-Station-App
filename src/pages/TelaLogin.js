@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text, StyleSheet, Image  } from 'react-native';
+import { View, TextInput, TouchableOpacity, Text, StyleSheet, Image, SafeAreaView  } from 'react-native';
 
 export default function TelaLogin({ navigation }) {
   // hooks para armazenar os dados dos TextInputs
@@ -22,9 +22,9 @@ export default function TelaLogin({ navigation }) {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
 
-    <View style={styles.Top}>
+    <View>
       <Image style={styles.TopImage} source={require('./assets/shell.png')} />
       <Text style={styles.title}>Autenticação</Text>
     </View>
@@ -57,7 +57,7 @@ export default function TelaLogin({ navigation }) {
         onPress={() => navigation.navigate('TelaNovoCadastro')}>
         Novo cadastro
       </Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -103,9 +103,5 @@ const styles = StyleSheet.create({
   TopImage: {
     width: 200,
     height: 100,
-  },
-  Top: {
-    justifyContent: 'start',
-    alignItems: 'column'
   },
 });
