@@ -6,14 +6,13 @@ import {
   StyleSheet,
   Image,
   TouchableOpacity,
-  SafeAreaView,
 } from 'react-native';
 export default function TelaNoticia({ navigation }) {
   return (
     <ScrollView>
       <Image style={styles.paragraph} source={require('./assets/shell.png')} />
 
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.newsContainer}>
           <Text style={styles.newsTopTitle}>Notícias</Text>
         </View>
@@ -89,7 +88,7 @@ export default function TelaNoticia({ navigation }) {
             sociedade.
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     </ScrollView>
   );
 }

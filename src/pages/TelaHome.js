@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, SafeAreaView} from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 export default function Noticias({ navigation }) {
   return (
     <SafeAreaView>
